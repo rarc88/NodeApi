@@ -1,3 +1,5 @@
+const pool = require('../dataBase')
+
 const user = {
     create: (req, res) => {
         const data = req.body
