@@ -3,7 +3,6 @@ var router = express.Router();
 
 const user = require('../controllers/userController');
 
-/* GET users listing. */
 router.get('/', function(req, res, next) {
   res.send({ status: 'OK', message: 'User' });
 });

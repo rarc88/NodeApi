@@ -1,5 +1,3 @@
-const User = require('../models/user')
-
 const user = {
     create: (req, res) => {
         const data = req.body
