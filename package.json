@@ -3,7 +3,10 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "nodemon ./bin/www"
+    "start": "nodemon ./bin/www",
+    "fetch": "git fetch origin && git merge origin/master",
+    "commit": "git add . && git commit -m 'CRUD'",
+    "push": "git add . && git commit -m 'CRUD' && git push origin master"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
