@@ -3,10 +3,9 @@ const mysql = require('promise-mysql');
 const pool = mysql.createPool({
     host: 'localhost',
     port: '3306',
-    database: 'fitel',
+    database: 'angular_api',
     user: 'root',
-    password: '',
-    connectionLimit: 10
+    password: ''
 });
 
 pool.getConnection()
@@ -14,7 +13,7 @@ pool.getConnection()
         pool.releaseConnection(conn);
         console.log('Connected to the database successfully.');
     }).catch(err => {
-        console.log('failure when trying to connect to the database', err);
+        console.log('Failure when trying to connect to the database.', err);
     });
 
 module.exports = pool;
